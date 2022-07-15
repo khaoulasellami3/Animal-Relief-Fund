@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Animal Relief Fund</title>
     <!-- custom css file link -->
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+
     <div class="main">
         <div class="navbar">
             <div class="icon">
@@ -18,7 +19,6 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">About</a></li>
@@ -34,14 +34,30 @@
 
         </div>
         <div class="content">
-            <h3 class="anim">hello</h3>
             <h1>Animal<br><span>Relief</span><br>Fund</h1>
-            <p class="par">True human goodness, in all its purity and freedom,<br>can come to the fore only when its recipient has no power.<br>Mankind's true moral test,its fundamental test,consists of its attitude towards those <br>who are at its mercy animals.</p>
-            
+            <p class="par">True human goodness, in all its purity and freedom,<br>can come to the fore only when its
+                recipient has no power.<br>Mankind's true moral test,its fundamental test,consists of its attitude
+                towards those <br>who are at its mercy animals.</p>
+            <button class="cn"><a href="#">Join us</a></button>
+
+            <div class="form">
+                <form onsubmit="signup()">
+                    <h2>Login Here</h2>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="password" id="password" name="" placeholder="Password">
+                    <button type="submit" class="btnn">Sign up</a></button>
+                </form>
+
+
+            </div>
         </div>
     </div>
-    <script src="main.js" ></script>
 
+
+
+
+<script src="main.js" ></script>
 </body>
 
 </html>
