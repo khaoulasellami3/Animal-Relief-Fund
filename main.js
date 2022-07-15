@@ -21,12 +21,22 @@ console.log("welcome you are one of us")
 }
 
 
+
 function loginFunc(e){
     event.preventDefault();
     console.log("hello");
 }
 
+    
+    
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
 
-function doSomething(){
-    document.getElementById("anim").innerHTML = "You are welcome, now you become one of us"
-}
+ 
