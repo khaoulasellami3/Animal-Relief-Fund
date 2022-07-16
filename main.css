@@ -115,6 +115,23 @@ ul li a:hover {
    outline: none;
 }
 
+.btn-search {
+   width: 100px;
+   height: 40px;
+   background: #ff7200;
+   border: 2px solid #ff7200!important;
+   margin-top: 13px;
+   color: #fff;
+   font-size: 15px;
+   border-bottom-right-radius: 5px!important;
+   border-bottom-right-radius: 5px!important;
+}
+
+.btn-search:focus {
+   outline: none;
+
+}
+
 .content {
    width: 1200px;
    height: auto;
@@ -256,32 +273,7 @@ ul li a:hover {
 }
 
 
-.anim {
 
-   font-size: 50px;
-   text-align: center;
-   text-shadow: 5px 5px 5px #ff7200;
-   color: white;
-
-   animation: mySlide;
-   animation-play-state: running;
-   animation-iteration-count: infinite;
-
-   animation-timing-function: linear;
-   animation-duration: 10s;
-
-
-}
-
-@keyframes mySlide {
-   from {
-      margin-left: 100%;
-   }
-
-   to {
-      margin-left: 0%;
-   }
-}
 
 .content1 {
    width: 100%;
@@ -324,4 +316,8 @@ ul li a:hover {
    letter-spacing: 1.2px;
    line-height: 30px;
    align-content: center; 
+}
+
+ol, ul {
+   padding-left: 0.1rem!important;
 }

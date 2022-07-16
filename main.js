@@ -24,19 +24,26 @@ console.log("welcome you are one of us")
 
 function loginFunc(e){
     event.preventDefault();
-    console.log("hello");
+ 
+    var username = document.getElementById('username').value;
+    
+    var link = document.getElementById('link').value;
+
+    var user = localStorage.getItem(username);
+    var data = JSON.parse(user);
+    console.log(data);
+
+    if(user==nul){
+        link.innerHTML = "wrong username";
+    } else if(username == data.username && password == data.password){
+        link.innerHTML = "logged in";
+    }
+    else{
+        link.innerHTML = "wrong password";
+    }
 }
 
     
-    
-$(document).ready(function() {
-    $('#autoWidth').lightSlider({
-        autoWidth:true,
-        loop:true,
-        onSliderLoad: function() {
-            $('#autoWidth').removeClass('cS-hidden');
-        } 
-    });  
-  });
+
 
  

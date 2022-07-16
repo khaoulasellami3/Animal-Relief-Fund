@@ -9,6 +9,7 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -30,104 +31,78 @@
             </div>
             <div class="search">
                 <input class="srch" type="search" name="" placeholder="type To text">
-                <a href="#"><button class="btn">Search</button></a>
+                <a href="#"><button class="btn-search">Search</button></a>
             </div>
-
-
+            
         </div>
-        <ul>
-            <li>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
                 <div class="content1">
-                    <div class="carte">
-                    <img src="photo1.jpg" class="animal">
-                    <div class="details">
-                        <h1><strong>Kiki</strong></h1>
-                        <p>1 year</p>
-                        <p>male</p> 
-                        <p>vaccinated</p>
+                    <div class="carte mx-3">
+                        <img src="photo1.jpg" class="animal">
+                        <div class="details">
+                            <h1><strong>Kiki</strong></h1>
+                            <p>1 Year | Male | Vaccinated</p>
+                        </div>
                     </div>
+                    <div class="carte mx-3">
+                        <img src="dog1.jpg" class="animal">
+                        <div class="details">
+                            <h1><strong>Alex</strong></h1>
+                            <p>6 Months | Male | Vaccinated</p>
+                        </div>
                     </div>
-                    
+                    <div class="carte mx-3">
+                        <img src="photo2.jpg" class="animal">
+                        <div class="details">
+                            <h1><strong>Alex</strong></h1>
+                            <p>6 Months | Male | Vaccinated</p>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
                 <div class="content1">
-                    <div class="carte">
-                    <img src="dog1.jpg" class="animal">
-                    <div class="details">
-                        <h1><strong>Alex</strong></h1>
-                        <p>6 months</p>
-                        <p>male</p> 
-                        <p>vaccinated</p>
+                    <div class="carte mx-3">
+                        <img src="dog2.jpg" class="animal">
+                        <div class="details">
+                            <h1><strong>Bruno</strong></h1>
+                            <p>2 Months | Male | Vaccinated</p>
+                        </div>
                     </div>
+                    <div class="carte mx-3">
+                        <img src="photo4.jpg" class="animal">
+                        <div class="details">
+                            <h1><strong>Zaytouna</strong></h1>
+                            <p>5 Months | Female | Vaccinated</p>
+                        </div>
                     </div>
-                    
+                    <div class="carte mx-3">
+                        <img src="dog3.jpg" class="animal">
+                        <div class="details">
+                            <h1><strong>Jasper</strong></h1>
+                            <p>6 Months | Male | Vaccinated</p>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="content1">
-                    <div class="carte">
-                    <img src="photo2.jpg" class="animal">
-                    <div class="details">
-                        <h1><strong>Framboise</strong></h1>
-                        <p>8 months</p>
-                        <p>female</p> 
-                        <p>vaccinated</p>
-                    </div>
-                    </div>
-                    
-                </div>
-            </li>
-            
-            <li>
-                <div class="content1">
-                    <div class="carte">
-                    <img src="dog2.jpg" class="animal">
-                    <div class="details">
-                        <h1><strong>Bruno</strong></h1>
-                        <p>2 months</p>
-                        <p>male</p> 
-                        <p>vaccinated</p>
-                    </div>
-                    </div>
-                    
-                </div>
-            </li>
-            
-            <li>
-                <div class="content1">
-                    <div class="carte">
-                    <img src="photo4.jpg" class="animal">
-                    <div class="details">
-                        <h1><strong>Zaytouna</strong></h1>
-                        <p>5 months</p>
-                        <p>female</p> 
-                        <p>vaccinated</p>
-                    </div>
-                    </div>
-                    
-                </div>
-            </li>
-            
-            <li>
-                <div class="content1">
-                    <div class="carte">
-                    <img src="dog3.jpg" class="animal">
-                    <div class="details">
-                        <h1><strong>Jasper</strong></h1>
-                        <p>6 months</p>
-                        <p>male</p> 
-                        <p>vaccinated</p>
-                    </div>
-                    </div>
-                    
-                </div>
-            </li>
-            
-        </ul>
-        
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>        
     </div>
     <script src="main.js" ></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 
